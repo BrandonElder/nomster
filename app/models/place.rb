@@ -1,3 +1,3 @@
 class Place < ActiveRecord::Base
-  belongs_to :places
+  belongs_to :user
 end
