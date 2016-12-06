@@ -13,6 +13,15 @@
   padding:20px;
 }
 
+.link a{
+  color:black
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
 .buttons {
   margin-right: 100px
 }
@@ -29,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
 }
+
 
 body {
   background: url('/assets/subtle_grunge.png');
@@ -63,7 +73,7 @@ blockquote p {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #9CE69F;
+  color: #E6F7EC;
   font-family: 'elliotsixregular', sans-serif;
   font-size:26px;
 }
