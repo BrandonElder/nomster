@@ -13,6 +13,7 @@
   padding:20px;
 }
 
+
 .greeting {
   
 }
@@ -33,9 +34,11 @@ a:hover {
   text-decoration: none;
 }
 
+
 .buttons {
   margin-right: 100px
 }
+
 
 .field_with_errors {
   color: #ff3333;
@@ -43,6 +46,7 @@ a:hover {
   border-radius: 3px;
   padding:8px;
 }
+
 
 .img-responsive {
     display: block;
@@ -55,8 +59,6 @@ a:hover {
 .clear {
     clear: both;
 }
-
-
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,6 +79,7 @@ img {
 }
 
 
+
 /*Footer*/
 
 .container-fluid {
@@ -86,7 +89,7 @@ img {
 
 .foot {
   background: url('/assets/broken_noise.png');
-  color: #E6F7EC;
+  color: white;
   font-family: 'elliotsixregular', sans-serif;
 }
 
@@ -97,6 +100,7 @@ img {
   width: 250px;
   margin: 0 auto;
   text-align: center;
+  color: black;
 }
 
 pages a {
@@ -146,7 +150,7 @@ blockquote p {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #E6F7EC;
+  color: white;
   font-family: 'elliotsixregular', sans-serif;
   font-size:26px;
 }
