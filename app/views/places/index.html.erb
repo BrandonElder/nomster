@@ -11,7 +11,7 @@
     <div class="item active">
       <%= image_tag 'injera1.jpg', class: 'img-responsive' %>
       <div class="carousel-caption">
-        Healthy Food Here!
+        Healthy and Natural!
       </div>
     </div>
     <div class="item">
@@ -38,15 +38,15 @@
 </div>
 
 <div class="greeting">
-  <br />
-  <h3 class="hello">Welcome to Vegster.</h3>
+  <br /><br />
+  <h2 class="hello">Welcome to Vegster.</h2>
     <p class="hello">
-    <b>The Triangle's Guide to Vegetarian and Vegan Friendly Eateries!<br />Sign Up To Add Your Favorite Spot.</b>
+    The Triangle's Guide to Vegetarian and Vegan Friendly Eateries!<br />Sign Up To Add Your Favorite Spot.
     </p>
   <br />
 </div>
 
-<div class="pages">
+<div class="apple_pagination">
   <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 </div>
 
@@ -80,6 +80,6 @@
 <% end %>
   
 
-<div class="pages">
+<div class="apple_pagination">
   <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
 </div>
