@@ -103,13 +103,39 @@ img {
   color: black;
 }
 
-pages a {
-  width: 250px;
-  margin: 0 auto;
+.pagination {
+  background-color: fff;
   text-align: center;
-  text-decoration:none;
+ 
+}
+
+.pagination a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
   color: black;
 }
+
+.pagination .disabled {
+  display: none;
+}
+
+.pagination .current {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #495357;
+    color: snow;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+}
+
+
 
 
 
