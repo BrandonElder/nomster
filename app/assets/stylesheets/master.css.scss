@@ -55,7 +55,13 @@
 }
 
 .apple_pagination a:hover, .apple_pagination a:focus {
-  text-decoration: underline; 
+  text-decoration: none; 
+}
+
+.pages {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
