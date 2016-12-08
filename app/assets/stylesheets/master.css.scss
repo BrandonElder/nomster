@@ -17,11 +17,26 @@
   
 }
 
-.center {
+/*Pagination*/
+
+.paginate {
   width: 250px;
   margin: 0 auto;
   text-align: center;
+  background-color: fff;
 }
+
+ 
+}
+
+.paginate a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+
 
 .hello {
   text-align:center;
