@@ -11,19 +11,19 @@
     <div class="item active">
     <%= image_tag 'injera1.jpg', class: 'img-responsive images' %>
       <div class="carousel-caption">
-        Healthy and Natural!
+        Looking For Something Fresh and Healthy?
       </div>
     </div>
     <div class="item">
     <%= image_tag 'veganflava3.jpg', class: 'img-responsive images' %>
       <div class="carousel-caption">
-        Fresh and Delicious!
+        Photos and Reviews From Real People!
       </div>
     </div>
     <div class="item">
     <%= image_tag 'seitan1.jpg', class: 'img-responsive images' %>
       <div class="carousel-caption">
-        You Won't Miss The Meat!
+        The Best Vegetarian Friendly Restaurants Here!
       </div>
     </div>
   </div>
@@ -54,11 +54,6 @@
   <h2 class="link"><%= link_to place.name, place_path(place) %></h2><br />
   <i><%= place.address %></i><br /><br />
   <p><%= place.description %></p><br />
-  
-
-  <% if place.photos.present? %>
-    <%= image_tag place.photos.last.Picture, class: 'img-responsive' %>
-  <% end %>
   
 
  <% if place.comments.present? %>
