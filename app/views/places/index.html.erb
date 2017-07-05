@@ -9,21 +9,21 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-    <%= image_tag 'injera1.jpg', class: 'img-responsive images' %>
+    <%= image_tag 'vegan1.jpg', class: 'img-responsive images' %>
       <div class="carousel-caption">
         Looking For Something Fresh and Healthy?
       </div>
     </div>
     <div class="item">
-    <%= image_tag 'veganflava3.jpg', class: 'img-responsive images' %>
+    <%= image_tag 'vegan3.jpg', class: 'img-responsive images' %>
       <div class="carousel-caption">
         Photos and Reviews From Real People!
       </div>
     </div>
     <div class="item">
-    <%= image_tag 'seitan1.jpg', class: 'img-responsive images' %>
+    <%= image_tag 'vegan2.jpg', class: 'img-responsive images' %>
       <div class="carousel-caption">
-        The Best Vegetarian Friendly Restaurants Here!
+        Find The Best Vegetarian Friendly Eateries!
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@
   </a>
 </div>
 
-<div class="greeting">
+<!--<div class="greeting">
   <b><h1 class="hello">Welcome to Vegster.</h1>
     <p class="hello">
     The Triangle's Guide to Vegetarian and Vegan Friendly Eateries!<br />Sign Up To Submit Your Favorite Restaurant, add foodie pics &amp; more!
@@ -46,7 +46,7 @@
 
 <div class="pages">
   <%= will_paginate @places, previous_label: h("<"), next_label: h(">") %>
-</div>
+</div> -->
 
 
 <% @places.each do |place| %>
