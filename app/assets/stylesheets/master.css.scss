@@ -1,6 +1,28 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Global Styles / Links / ETC */
+
+body {
+  background: url('/assets/subtle_grunge.png');
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+
+.link a {
+  color:black
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
 .booyah-box {
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -13,29 +35,25 @@
   padding: 20px;
 }
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+  width: 100%
+}
 
+img {
+  vertical-align: middle;
+}
 
 .hello {
   text-align:center;
   margin-top:30px; 
 }
 
-
-.link a{
-  color:black
-}
-
-
-a:hover {
-  color: grey;
-  text-decoration: none;
-}
-
-
 .buttons {
   margin-right: 100px
 }
-
 
 .field_with_errors {
   color: #ff3333;
@@ -44,121 +62,9 @@ a:hover {
   padding:8px;
 }
 
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    max-height: auto;
-    width: 100%
-}
-
 .clear {
     clear: both;
 }
-
-
-h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  padding:0;
-}
-
-
-body {
-  background: url('/assets/subtle_grunge.png');
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.5em;
-}
-
-
-img {
-  vertical-align: middle;
-}
-
-
-
-/*Footer*/
-
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.foot {
-  background: url('/assets/broken_noise.png');
-  color: white;
-  font-family: 'Droid Sans', sans-serif;
-}
-
-
-
-
-/*Pagination*/
-
-.pages {
-  width: 250px;
-  margin: 0 auto;
-  text-align: center;
-  color: black;
-}
-
-.pagination {
-  background-color: fff;
-  text-align: center;
- 
-}
-
-.pagination a {
-  padding-left: 10px;
-  padding-right: 10px;
-  text-decoration: none;
-  color: black;
-}
-
-.pagination .disabled {
-  display: none;
-}
-
-.pagination .current {
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    background-color: #333333;
-    color: #ffffff;
-    display: inline-block;
-    width: 1.4em;
-    height: 1.4em;
-    line-height: 1.5;
-    -moz-border-radius: 2em;
-    -webkit-border-radius: 2em;
-    border-radius: 2em;
-}
-
-
-
-
-
-/*BLOCKQUOTES*/
-
-blockquote {
-  color: black;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-
-blockquote:before {
-  color: black;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-blockquote p {
-  display: inline;
-}
-
 
 
 /*NAVBAR*/
@@ -245,15 +151,113 @@ blockquote p {
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    max-height: 640px;
+    height: 640px;
     max-width: 2000px;
     width: 100%;
     margin: auto;
+}
+
+/*BLOCKQUOTES*/
+blockquote {
+  color: black;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: black;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+
+
+/*Pagination*/
+.pages {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+}
+
+.pagination {
+  background-color: fff;
+  text-align: center;
+ 
+}
+
+.pagination a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.pagination .disabled {
+  display: none;
+}
+
+.pagination .current {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+}
+
+
+/*Footer*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background: url('/assets/broken_noise.png');
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.foot-container {
+  padding-top: 20px;
 }
 
 
 /*MAP*/
 
 #map {
-      height: 300px;
-    }
+  height: 300px;
+}
+
+.devise-forms {
+  padding: 20px !important;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
